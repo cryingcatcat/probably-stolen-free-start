@@ -2,6 +2,8 @@
 
 为《深空当铺：可能是偷的》（Probably Stolen）自定义新开局天赋点数和基础槽位。
 
+[Steam 创意工坊订阅](https://steamcommunity.com/sharedfiles/filedetails/?id=3834187264) · [下载 v1.0.0 安装包](https://github.com/cryingcatcat/probably-stolen-free-start/releases/tag/v1.0.0)
+
 **作者：Cryingcatcat**  
 **贡献者：Cryingcatcat、Codex（OpenAI AI 编程助手）**
 
