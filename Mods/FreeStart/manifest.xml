@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <ID>custom_free_start</ID>
+  <Name>自由开局：天赋点数与槽位</Name>
+  <Author>Cryingcatcat</Author>
+  <ModVersion>1.0.0</ModVersion>
+  <Description>作者：Cryingcatcat；贡献者：Cryingcatcat、Codex。在模组齿轮设置中自由填写初始天赋点数与基础槽位，默认 99 点、99 槽。支持分别开启无限点数、无限槽位，以及首局选择天赋。0 表示零，负数按零处理。保留天赋互斥与额外槽位加成。应用设置后重新进入新游戏的天赋选择界面。仅影响新开局，已有存档不补加天赋。停用后新开局恢复原版；已选原版天赋由游戏正常保存。</Description>
+  <GameVersions><Version>0.46D</Version></GameVersions>
+  <Prerequisites />
+  <Assemblies><Assembly>FreeStart.dll</Assembly></Assemblies>
+  <Capabilities />
+</Manifest>

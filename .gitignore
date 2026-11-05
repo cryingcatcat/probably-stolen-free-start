@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+*.pdb
+.vs/
+workshop.local.vdf
+steamcmd/

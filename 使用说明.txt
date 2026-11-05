@@ -1,0 +1,50 @@
+自由开局：天赋点数与槽位 v1.0.0
+
+作者：Cryingcatcat
+贡献者：Cryingcatcat、Codex
+
+使用方法
+1. 完全退出并重新启动游戏。
+2. 主菜单 → 模组 / Modding / Mods，找到“自由开局：天赋点数与槽位”并启用。
+3. 如果游戏提示重启，退出游戏后再次启动；设置齿轮在模组启用并加载后可用。
+4. 点击该模组旁的齿轮，填写“初始天赋点数”“基础天赋槽位数”，点击应用 / Apply。
+5. 重新进入“新游戏”的天赋选择界面，查看计数并选择天赋。
+
+设置
+- 默认 99 点、99 个基础槽位。
+- 可输入 0～2147483647 的整数；0 确实表示零，负数按零处理。
+- “无限天赋点数”和“无限天赋槽位”为独立开关，开启后对应计数显示 ∞。
+- “首局也可选择天赋”默认开启。
+- 天赋之间的互斥、负面天赋返还点数、天赋自身的额外槽位加成保留。
+- 修改设置无需重新安装；应用后退出并重新打开开局天赋界面。
+- 恢复原版数值：点数 3、槽位 4，关闭两个无限开关；若需完全恢复原版首局规则，也关闭“首局也可选择天赋”。
+
+手动安装 / 换电脑
+把本包内的 Mods 文件夹复制到 Probably Stolen.exe 所在目录。
+正确结果应为：
+  Probably Stolen\Mods\FreeStart\manifest.xml
+  Probably Stolen\Mods\FreeStart\FreeStart.dll
+不要把整个压缩包、Source 文件夹或 build.ps1 放进 Mods\FreeStart。
+使用游戏自带模组加载器，无需额外安装 MelonLoader 或 BepInEx。
+
+适用范围
+按本机 Windows Steam 正式版的 Mono 程序集编译：Steam build 26337366，游戏内部版本字符串 0.46D。
+旧 IL2CPP Demo / Playtest 不适用。后续游戏更新可能需要重新适配。
+仅调整新开局的天赋选择；不会为已有存档补加天赋。
+停用后后续新开局恢复原版；已经选择的原版天赋继续由游戏自身保存。
+如果另一个模组也修改开局天赋计数或界面，请只启用其中一个。
+
+卸载
+在游戏模组菜单停用本模组，退出游戏后删除 Mods\FreeStart 文件夹即可。
+配置由游戏保存在：
+  %USERPROFILE%\AppData\LocalLow\Questing Goose Studio\Probably Stolen\ModConfigs\custom_free_start.json
+它不属于存档；卸载时可保留，之后重装会沿用。
+
+源码与验证
+Source\FreeStart.cs 为完整源码，Source\build.ps1 可使用 Windows 自带 C# 编译器重新编译。
+命令示例（PowerShell）：
+  .\Source\build.ps1 -GamePath 'C:\Steam\steamapps\common\Probably Stolen'
+详见 验证记录.txt。已完成独立进程中的扫描和逻辑验证，尚未在正在运行的游戏内进行界面实测。
+
+官方模组文档
+https://github.com/dragonpan2/probably-stolen-modding

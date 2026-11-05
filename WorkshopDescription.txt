@@ -1,0 +1,32 @@
+[h1]自由开局 / Free Start[/h1]
+自由设置《深空当铺：可能是偷的》的初始天赋点数与基础槽位。
+
+[b]作者：Cryingcatcat[/b]
+[b]Contributors / 贡献者：Cryingcatcat、Codex（OpenAI AI 编程助手）[/b]
+
+[h2]功能[/h2]
+[list]
+[*]默认 99 点、99 个基础槽位，可直接输入其他整数。
+[*]分别开启无限天赋点数、无限槽位。
+[*]允许首局选择天赋，默认开启。
+[*]保留原生天赋互斥、负面天赋返还点数、额外槽位加成和已选天赋分页。
+[/list]
+
+[h2]使用[/h2]
+订阅后启动游戏，在 Mods / Modding 菜单启用“自由开局：天赋点数与槽位”，按提示重启。点击模组旁的齿轮，调整设置后点击 Apply / 应用，再重新打开新游戏天赋界面。
+输入 0～2147483647 的整数；0 表示零，负数按零处理。无限模式请使用独立开关。
+无需其他前置，使用游戏自带的 Mono 模组加载器。
+
+[h2]兼容性与存档[/h2]
+面向 Windows Steam 正式版 Mono。按 Steam build 26337366（内部版本字符串 0.46D）编译验证；不适用旧 IL2CPP Demo / Playtest。
+只影响新开局，不会给已有存档补加天赋。停用后新开局恢复原版，已选的原版天赋继续由游戏自身保存。
+请勿同时使用其他修改相同开局限制或界面的模组。
+
+[h2]验证状态[/h2]
+已通过编译、原版模组扫描器和离线逻辑检查；首局补丁已核对真实游戏指令。尚未完成游戏内界面和完整开局实测。
+
+[h2]Source / 源码[/h2]
+[url=https://github.com/cryingcatcat/probably-stolen-free-start]GitHub: cryingcatcat/probably-stolen-free-start[/url]
+
+[h2]English[/h2]
+Configure starting perk points and base slots from the mod's settings gear. Defaults: 99 points / 99 slots. Separate unlimited toggles and an optional first-run perk unlock. Native conflicts, negative-cost perks, bonus slots and pagination are preserved. New games only. Built for the full Windows Mono release using the game's built-in loader. Offline verified; in-game UI and full new-run smoke testing remain pending.
